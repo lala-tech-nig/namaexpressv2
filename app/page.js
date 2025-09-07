@@ -3,26 +3,35 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import products from '../data/products';
-import ProductCard from '../components/ProductCard';
 
 export default function Page() {
   const [counts, setCounts] = useState({});
   const router = useRouter();
 
+  // Load saved cart
   useEffect(() => {
     const saved = localStorage.getItem('pos_cart_v1');
     if (saved) setCounts(JSON.parse(saved));
   }, []);
 
+  // Persist cart
   useEffect(() => {
     localStorage.setItem('pos_cart_v1', JSON.stringify(counts));
   }, [counts]);
 
-  const handleChange = (id, qty) => {
+  // Handle product clicks
+  const handleClick = (id) => {
+    setCounts((prev) => {
+      const next = { ...prev, [id]: (prev[id] || 0) + 1 };
+      return next;
+    });
+  };
+
+  // Long press reset
+  const handleHold = (id) => {
     setCounts((prev) => {
       const next = { ...prev };
-      if (qty > 0) next[id] = qty;
-      else delete next[id];
+      delete next[id];
       return next;
     });
   };
@@ -32,24 +41,57 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
-      <header className="p-4">
-        <h1 className="text-2xl font-bold tracking-wide">NAMA EXPRESS POS</h1>
+      {/* Header */}
+      <header className="p-4 text-center">
+        <h1 className="text-2xl md:text-3xl font-extrabold tracking-wide text-yellow-400 drop-shadow">
+          🍲 NAMA EXPRESS POS
+        </h1>
       </header>
 
       {/* Product Grid */}
       <main className="flex-1 p-4 grid grid-cols-2 md:grid-cols-4 gap-4">
         {products.map((p) => (
-          <ProductCard
+          <motion.div
             key={p.id}
-            product={p}
-            qty={counts[p.id] || 0}
-            onChange={handleChange}
-          />
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => handleClick(p.id)}
+            onContextMenu={(e) => {
+              e.preventDefault();
+              handleHold(p.id);
+            }}
+            className="relative h-40 md:h-56 rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
+            style={{
+              backgroundImage: `url(${p.img})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition"></div>
+
+            {/* Text */}
+            <div className="absolute bottom-2 left-2">
+              <div className="font-bold text-lg">{p.name}</div>
+              <div className="text-yellow-300 font-semibold">₦{p.price}</div>
+            </div>
+
+            {/* Counter Badge */}
+            {counts[p.id] > 0 && (
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                className="absolute top-2 right-2 bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shadow"
+              >
+                {counts[p.id]}
+              </motion.div>
+            )}
+          </motion.div>
         ))}
       </main>
 
       {/* Footer Action Bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex justify-between items-center">
+      <div className="fixed bottom-0 left-0 right-0 bg-gray-900/90 backdrop-blur-md p-4 flex justify-between items-center border-t border-gray-700">
         <motion.button
           whileHover={{ scale: totalItems ? 1.1 : 1 }}
           whileTap={{ scale: 0.95 }}
@@ -69,9 +111,9 @@ export default function Page() {
           whileTap={{ scale: 0.95 }}
           onClick={() => router.push('/checkout')}
           disabled={!totalItems}
-          className={`px-6 py-2 rounded-xl font-bold transition ${
+          className={`px-6 py-2 rounded-xl font-bold shadow-lg transition ${
             totalItems
-              ? 'bg-yellow-400 text-red-600 hover:shadow-lg'
+              ? 'bg-yellow-400 text-red-600 hover:shadow-yellow-500/50'
               : 'bg-gray-500 text-gray-300 cursor-not-allowed'
           }`}
         >
