@@ -42,11 +42,17 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Header */}
-      <header className="p-4 text-center">
-        <h1 className="text-2xl md:text-3xl font-extrabold tracking-wide text-yellow-400 drop-shadow">
-          🍲 NAMA EXPRESS POS
-        </h1>
-      </header>
+      <header className="p-4 flex items-center justify-center space-x-3">
+  <img 
+    src="/landinglogo.jpeg" 
+    alt="NAMA EXPRESS POS Logo" 
+    className="w-15 h-15 object-contain" 
+  />
+  <h1 className="text-2xl md:text-3xl font-extrabold tracking-wide text-yellow-400 drop-shadow">
+    NAMA EXPRESS POS
+  </h1>
+</header>
+
 
       {/* Product Grid */}
       <main className="flex-1 p-4 grid grid-cols-2 md:grid-cols-4 gap-4">

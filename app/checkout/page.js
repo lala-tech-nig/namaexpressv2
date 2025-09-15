@@ -79,24 +79,61 @@ export default function CheckoutPage() {
         <td>${it.name}</td>
         <td style="text-align:center">${it.qty}</td>
         <td style="text-align:right">₦${it.price.toLocaleString()}</td>
-        <td style="text-align:right">₦${(it.price*it.qty).toLocaleString()}</td>
+        <td style="text-align:right">₦${(it.price * it.qty).toLocaleString()}</td>
       </tr>
     `).join('');
 
     return `
-      <html>
-        <body style="font-family:Arial;padding:20px">
-          <h2 style="text-align:center">LALA TECH CAFÉ</h2>
-          <div>${new Date(order.createdAt).toLocaleString()}</div>
-          <div>Order: ${order.id}</div>
-          <table style="width:100%;margin-top:10px;border-collapse:collapse">
-            <thead><tr><th>Item</th><th>Qty</th><th>Price</th><th>Subtotal</th></tr></thead>
-            <tbody>${itemsHtml}</tbody>
-          </table>
-          <h3>Total: ₦${order.total.toLocaleString()}</h3>
-          <p style="text-align:center">Thanks for patronizing us</p>
-        </body>
-      </html>
+    <html>
+  <body style="font-family: Arial; font-size: 12px; padding: 5px; width: 80mm;">
+
+    <!-- Logo -->
+    <div style="text-align: center; margin-bottom: 5px;">
+      <img src="namalogo.png" alt="LALA TECH CAFE" style="max-width: 60px; height: auto;" />
+      <div style="margin-top: 3px; font-size: 11px;">
+        <div>NAMA EXPRESS</div>
+        <div>45 AWOLOWO ROAD IKOYI, Lagos</div>
+        <div>+2349014590513,+2349165064788</div>
+        <div>Instagram: namaexpressstreetfood</div>
+      </div>
+    </div>
+
+    <!-- Order Info -->
+    <div style="margin: 5px 0; font-size: 11px;">
+      <div>${new Date(order.createdAt).toLocaleString()}</div>
+      <div>Order: ${order.id}</div>
+    </div>
+
+    <!-- Items Table -->
+    <table style="width: 100%; margin-top: 5px; border-collapse: collapse; font-size: 11px;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Item</th>
+          <th style="text-align: center;">Qty</th>
+          <th style="text-align: right;">Price</th>
+          <th style="text-align: right;">Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${itemsHtml}
+      </tbody>
+    </table>
+
+    <!-- Total -->
+    <h3 style="font-size: 12px; margin-top: 8px; text-align: right;">
+      Total: ₦${order.total.toLocaleString()}
+    </h3>
+
+    <!-- Footer -->
+    <p style="text-align: center; font-size: 11px; margin-top: 5px;">
+      All tax included
+    </p>
+    <p style="text-align: center; font-size: 11px; margin-top: 3px;">
+      Thanks for your patronage
+    </p>
+  </body>
+</html>
+
     `;
   };
 
@@ -160,8 +197,8 @@ export default function CheckoutPage() {
               onClick={confirmAndPrint}
               disabled={selected.length === 0 || sending}
               className={`${selected.length === 0 || sending
-                  ? 'bg-slate-200 text-slate-400'
-                  : 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg'
+                ? 'bg-slate-200 text-slate-400'
+                : 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg'
                 } px-5 py-2 rounded-xl font-semibold transition`}
             >
               {sending ? 'Sending...' : 'Confirm & Print'}
