@@ -55,7 +55,7 @@ export default function Page() {
 
 
       {/* Product Grid */}
-      <main className="flex-1 p-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <main className="flex-1 p-4 py-20 grid grid-cols-2 md:grid-cols-4 gap-4">
         {products.map((p) => (
           <motion.div
             key={p.id}
