@@ -4,7 +4,7 @@ export const metadata = {
   title: "NAMA EXPRESS POS",
   description: "Nama Express POS System",
   manifest: "/manifest.json",
-  themeColor: "#ff6600",
+  themeColor: "#FFD700",
   icons: {
     icon: "/icons/icon-192x192.png",
     apple: "/icons/icon-512x512.png",
