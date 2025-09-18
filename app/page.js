@@ -240,7 +240,7 @@ export default function Page() {
         {/* Launch Menu */}
         <section>
           <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-400 mb-10 text-center drop-shadow-lg">
-            🚀 LAUNCH MENU
+            LUNCH MENU
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {launchMenu.map(renderProduct)}
@@ -250,7 +250,7 @@ export default function Page() {
         {/* Main Menu */}
         <section>
           <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-400 mb-10 text-center drop-shadow-lg">
-            🍴 MAIN MENU
+            MAIN MENU
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {mainMenu.map(renderProduct)}
