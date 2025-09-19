@@ -19,7 +19,7 @@ const products = [
   // { id: 'p18', name: 'BEEF or Kidney', price: 1700, img: 'https://images.food52.com/PMXZ9Bz3fNZD1dqxNSqLcqv68E4=/cc4dec59-c417-4bb8-aa37-74a0080c2a62--4796689247_8da1af91d1.jpg' },
   { id: 'p19', name: 'Nama Chicken Suya (Boneless)', price: 1750, img: 'https://files.mob-cdn.co.uk/recipes/2024/08/220A1417-1.jpg' },
   { id: 'p20', name: 'Chicken Shawarma (2x sausage)', price: 3500, img: 'https://www.tysonfoodservice.com/content/dam/tfs/recipe-photos-tyson/all-recipes/Chicken-Shawarma.jpg' },
-  { id: 'p21', name: 'Arab Shawarma with French Fries Portion', price: 6250, img: 'https://img.freepik.com/premium-photo/arabic-shawarma-with-fries-ketchup-raita-served-dish-isolated-grey-background-side-view-fastfood_689047-1158.jpg' },
+  // { id: 'p21', name: 'Arab Shawarma with French Fries Portion', price: 6250, img: 'https://img.freepik.com/premium-photo/arabic-shawarma-with-fries-ketchup-raita-served-dish-isolated-grey-background-side-view-fastfood_689047-1158.jpg' },
   { id: 'p22', name: 'Chicken Dip Sauce', price: 350, img: 'https://cdn.jwplayer.com/v2/media/K2ULR0Me/poster.jpg?width=1920' },
   { id: 'p23', name: 'Gravy Sauce', price: 500, img: 'https://www.favfamilyrecipes.com/wp-content/uploads/2024/05/Beef-Gravy-pour.jpg' },
   { id: 'p24', name: 'Pepper Sauce', price: 300, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf0gq5OEfSJOPW6PUD4D3PdF88e4IxMsXCPw&s' },
