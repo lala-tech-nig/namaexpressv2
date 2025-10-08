@@ -25,7 +25,7 @@ const products = [
   { id: 'p20', name: 'GRILL CHICKEN (XL 1/4 PIECE)', price: 5000, img: 'https://images.unsplash.com/photo-1712579733874-c3a79f0f9d12?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
   { id: 'p43', name: 'Sauces (Onion Mayonnaise)', price: 500, img: 'https://eu-images.contentstack.com/v3/assets/blt517884d3ef6fd53e/blt34b4855fd7211281/66e43809256581c6e8ac505e/onion_20dip_1626372147.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale' },
   { id: 'p44', name: 'Sauces (CHINESE BBQ)', price: 500, img: 'https://plus.unsplash.com/premium_photo-1695865411429-fc175f8d408d?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-  { id: 'p45', name: 'Sauces (Pepper Sauce)', price: 300, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf0gq5OEfSJOPW6PUD4D3PdF88e4IxMsXCPw&s' },
+  // { id: 'p45', name: 'Sauces (Pepper Sauce)', price: 300, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf0gq5OEfSJOPW6PUD4D3PdF88e4IxMsXCPw&s' },
   // { id: 'p23', name: 'BEEF Shawarma', price: 3500, img: 'https://www.tysonfoodservice.com/content/dam/tfs/recipe-photos-tyson/all-recipes/Chicken-Shawarma.jpg' },
   { id: 'p24', name: 'Chicken Dip Sauce', price: 350, img: 'https://cdn.jwplayer.com/v2/media/K2ULR0Me/poster.jpg?width=1920' },
   { id: 'p25', name: 'Gravy Sauce', price: 500, img: 'https://www.favfamilyrecipes.com/wp-content/uploads/2024/05/Beef-Gravy-pour.jpg' },
