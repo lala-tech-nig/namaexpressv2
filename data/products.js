@@ -39,6 +39,8 @@ const products = [
   { id: 'p38', name: 'Ice Cream (Fan Ice)', price: 1000, img: 'https://i.ytimg.com/vi/98V9Zd65kVc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAreqjkpPIa5hdtojREPtuErfo8qQ' },
   { id: 'p39', name: 'Custard (Warm)', price: 1500, img: 'https://www.sugarandcrumbs.co.uk/wp-content/uploads/2022/09/homemade-vanilla-custard-pudding-2021-08-26-16-20-56-utc-scaled-1.jpg' },
   { id: 'p40', name: 'Yoghurt Drink', price: 1000, img: 'https://www.somewhatsimple.com/wp-content/uploads/2019/04/fizzy_yogurt_delight_1.jpg' },
+  { id: 'p41', name: '1 piece prawn', price: 3500, img: 'https://images.unsplash.com/photo-1643968751074-de4434b26edd?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+  { id: 'p42', name: '1 piece prawn', price: 6950, img: 'https://images.unsplash.com/photo-1643968751074-de4434b26edd?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
 ];
 
 export default products;
