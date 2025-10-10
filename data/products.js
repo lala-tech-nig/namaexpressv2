@@ -17,7 +17,7 @@ const products = [
   { id: 'p42', name: '2 piece prawn', price: 6950, img: 'https://images.unsplash.com/photo-1643968751074-de4434b26edd?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
   { id: 'p22', name: 'Chicken Shawarma (2x sausage)', price: 3500, img: 'https://www.tysonfoodservice.com/content/dam/tfs/recipe-photos-tyson/all-recipes/Chicken-Shawarma.jpg' },
   { id: 'p16', name: 'BEEF Shawarma', price: 3500, img: 'https://files.mob-cdn.co.uk/recipes/2024/08/220A1417-1.jpg' },
-  { id: 'p15', name: 'RAM SUYA', price: 2250, img: 'https://blog.pricepally.com/wp-content/uploads/2023/04/Artboard-2-2.jpg' },
+  { id: 'p15', name: 'RAM SUYA', price: 25000, img: 'https://blog.pricepally.com/wp-content/uploads/2023/04/Artboard-2-2.jpg' },
   { id: 'p17', name: 'Chinese Suya', price: 2000, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR3V6NZicD6GB6rPE7jcIhKcPCyiCAjzvGmg&s' },
   { id: 'p21', name: 'Nama Chicken Suya (Boneless)', price: 1750, img: 'https://files.mob-cdn.co.uk/recipes/2024/08/220A1417-1.jpg' },
   { id: 'p18', name: 'GRILL CHICKEN (1-piece)', price: 2500, img: 'https://images.unsplash.com/photo-1712579733874-c3a79f0f9d12?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
