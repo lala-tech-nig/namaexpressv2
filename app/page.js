@@ -238,14 +238,6 @@ export default function Page() {
       {/* Product Sections */}
       <main className="flex-1 p-4 py-20 space-y-20">
         {/* Launch Menu */}
-        <section>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-yellow-400 mb-10 text-center drop-shadow-lg">
-            LUNCH MENU
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {launchMenu.map(renderProduct)}
-          </div>
-        </section>
 
         {/* Main Menu */}
         <section>
