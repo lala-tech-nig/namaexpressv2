@@ -42,7 +42,7 @@ export default function CheckoutPage() {
     try {
       setSending(true);
 
-      const res = await fetch("https://namaexpressbackend.onrender.com/api/orders", {
+      const res = await fetch("https://namaexpressbackend-whx2.onrender.com/api/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(order),
