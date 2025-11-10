@@ -44,7 +44,7 @@ const products = [
   { id: 'p38', name: 'Ice Cream (Fan Ice)', price: 1000, img: 'https://i.ytimg.com/vi/98V9Zd65kVc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAreqjkpPIa5hdtojREPtuErfo8qQ' },
   { id: 'p39', name: 'Custard (Warm)', price: 1500, img: 'https://www.sugarandcrumbs.co.uk/wp-content/uploads/2022/09/homemade-vanilla-custard-pudding-2021-08-26-16-20-56-utc-scaled-1.jpg' },
   { id: 'p40', name: 'Yoghurt Drink', price: 1000, img: 'https://www.somewhatsimple.com/wp-content/uploads/2019/04/fizzy_yogurt_delight_1.jpg' },
-  { id: 'p41', name: 'BIG SIZE Nylon Bags', price: 100, img: '/namanylon.jpeg' },
+  { id: 'p46', name: 'BIG SIZE Nylon Bags', price: 100, img: '/namanylon.jpeg' },
 
   
 ];
